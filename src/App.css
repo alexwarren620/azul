@@ -1,0 +1,108 @@
+#factories {
+    position: absolute;
+    width: 1085px;
+}
+
+.factory {
+  background: url(img/factory.png);
+  display: inline-block;
+  height: 250px;
+  pointer-events: none;
+  width: 250px;
+  position: absolute;
+}
+
+#factories {
+  --top: 0;
+  float: left;
+  position: relative;
+}
+
+#factories .factory {
+  position: absolute;
+}
+
+#factories .factory .tile {
+  transition: left 0.5s, top 0.5s;
+}
+
+#factories .factory-center {
+  left: 300px;
+  top: 460px;
+  background: none;
+}
+
+.factory1 {
+  left: 300px;
+  top: 177.5px;
+}
+
+.factory2 {
+  left: 585.316954888546px;
+  top: 384.7949016875158px;
+}
+.factory3 {
+    left: 476.335575687742px;
+    top: 720.2050983124842px;
+}
+.factory4 {
+    left: 123.66442431225809px;
+    top: 720.2050983124843px;
+}
+.factory5 {
+    left: 14.683045111453907px;
+    top: 384.79490168751585px;
+}
+
+.tile {
+  border: 2px outset;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px 2px #000;
+  display: inline-block;
+  pointer-events: none;
+  position: absolute;
+  height: 58px;
+  width: 58px;
+}
+
+#factories.selectable .tile:not(.tile0) {
+  cursor: pointer;
+  pointer-events: all;
+}
+
+#factories .tile.hover {
+  box-shadow: 0 0 5px 5px #fff;
+}
+
+.tile.tile0 {
+  background: url(img/first-player.svg) #fff;
+  border-color: #fff;
+  left: 396px;
+  top: 567.5px;
+  position: absolute;
+}
+
+.tile.tile1 {
+  background: url(img/black.svg) #231f20;
+  border-color: #231f20;
+}
+
+.tile.tile2 {
+  background: url(img/cyan.svg) #1dcad3;
+  border-color: #1dcad3;
+}
+
+.tile.tile3 {
+  background: url(img/blue.svg) #0083ad;
+  border-color: #0083ad;
+}
+
+.tile.tile4 {
+  background: url(img/yellow.svg) #ffbf3c;
+  border-color: #ffbf3c;
+}
+
+.tile.tile5 {
+  background: url(img/red.svg) #f5333f;
+  border-color: #f5333f;
+}
